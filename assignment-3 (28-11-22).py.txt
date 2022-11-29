@@ -1,0 +1,5 @@
+bal=50000
+amount=int(input("Enter amount :"))
+print("credited amount=",amount)
+n=amount+bal
+print("Main balance=",n)
