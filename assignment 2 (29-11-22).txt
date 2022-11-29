@@ -1,0 +1,22 @@
+empno=int(input('enter employee number:'))
+empname=(input('enter employee name:'))
+empdesig=(input('enter employee designation:'))
+bsal=int(input('enter basic salary:'))
+da=int(input('enter daily allowance:'))
+ta=int(input('enter travel allowance:'))
+hra=int(input('enter House Rental allowance:'))
+netsal=bsal+da+ta+hra
+if netsal>100000:
+    tax=netsal*10/100
+elif netsal>50000:
+    tax=netsal*7/100
+elif netsal>40000:
+    tax=netsal*4/100
+elif netsal>20000:
+    tax=netsal*2/100
+else:
+    tax=0
+print('employee number :',empno)
+print('employee name :',empname)
+print('employee designation :',empdesig)
+print('Tax :',tax)
