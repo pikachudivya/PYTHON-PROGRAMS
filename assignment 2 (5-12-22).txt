@@ -1,0 +1,14 @@
+nrange = int(input("\n\t From how many numbers you want to find smallest & largest number\t"))
+num = int(input("\n\t Enter number 1 ==>\t"))
+min_num = num
+max_num = num
+for x in range(nrange-1):
+ 
+    num=int(input('\n\t Enter number %d ==>\t'%(x+2)))
+    if ( num < min_num ):
+        min_num = num
+    if ( num > max_num ):
+        max_num = num
+
+print('\n\t Maximum number is %d'%(max_num))
+print('\n\t Minimum number is %d'%(min_num))
