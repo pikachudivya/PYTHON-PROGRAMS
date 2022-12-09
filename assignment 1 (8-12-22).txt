@@ -1,0 +1,14 @@
+n=int(input('enter the range'))
+m=int(input('enter the range'))
+matrix=[]
+for i in range(m):
+    c=[]
+    for j in range(n):
+        j=int(input('enter numbers in column'))
+        c.append(j)
+    print(' ')
+    matrix.append(c)
+for i in range(n):
+    for j in range(m):
+        print(matrix[i][j],end=' ')
+    print( )
