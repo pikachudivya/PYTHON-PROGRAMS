@@ -1,0 +1,9 @@
+n=int(input ("enter any number:"))
+l=[]
+for i in range(1,n+1):
+    x=int(input())
+    l.append(x)
+mi=min(l)
+ma=max(l)
+print(mi)
+print(ma)
