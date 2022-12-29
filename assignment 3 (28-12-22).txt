@@ -1,0 +1,7 @@
+l=list(map(int,input().split()))
+length=len(l)
+b=length//2
+c=l[:-b]
+z=l[b+1:]
+a=z[::-1]
+print(c+a)
